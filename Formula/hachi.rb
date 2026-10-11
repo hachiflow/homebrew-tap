@@ -5,20 +5,20 @@
 class Hachi < Formula
   desc "Agent-first CLI for hachiflow workspaces, with JSON on stdout and typed errors"
   homepage "https://github.com/hachiflow/hachi"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hachiflow/hachi/releases/download/v0.3.1/hachi_0.3.1_darwin_amd64.tar.gz"
-      sha256 "c8d2a3b60ad8f18b158e31db2fafb96bed568984d3558480dab8db51ac16ca3c"
+      url "https://github.com/hachiflow/hachi/releases/download/v0.3.2/hachi_0.3.2_darwin_amd64.tar.gz"
+      sha256 "2f151f7a8a5f5d96e8a4669b229da1983a0a44901f23ca7636b09050b0bd71fb"
 
       define_method(:install) do
         bin.install "hachi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hachiflow/hachi/releases/download/v0.3.1/hachi_0.3.1_darwin_arm64.tar.gz"
-      sha256 "e8632078758271d5b910d56c0bcc28a7a1ecdebfdcd3c41f1d5e3ef7fa934045"
+      url "https://github.com/hachiflow/hachi/releases/download/v0.3.2/hachi_0.3.2_darwin_arm64.tar.gz"
+      sha256 "f2689e3915d6a6db803923bfc301e4476a034cb3b707a042d5a3238a166eea2f"
 
       define_method(:install) do
         bin.install "hachi"
@@ -28,15 +28,15 @@ class Hachi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hachiflow/hachi/releases/download/v0.3.1/hachi_0.3.1_linux_amd64.tar.gz"
-      sha256 "b74a2947f259112c5ea0de4a65f7fafc419255fd08e26875db459616e34b5e0e"
+      url "https://github.com/hachiflow/hachi/releases/download/v0.3.2/hachi_0.3.2_linux_amd64.tar.gz"
+      sha256 "dc65ac5fef4c340bfe33f7de06f57c1a9f46cc968827122c5653a5b8a5ffdf76"
       define_method(:install) do
         bin.install "hachi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hachiflow/hachi/releases/download/v0.3.1/hachi_0.3.1_linux_arm64.tar.gz"
-      sha256 "1bcbd081f15f107c75cdbd2ea9ebf914aa05274a6c89d9b6ced20b8bd24e45e3"
+      url "https://github.com/hachiflow/hachi/releases/download/v0.3.2/hachi_0.3.2_linux_arm64.tar.gz"
+      sha256 "917a469dce104d6c08e2d29875748e9e25efd67556ebd7d6512fd28c9ecbde6e"
       define_method(:install) do
         bin.install "hachi"
       end
